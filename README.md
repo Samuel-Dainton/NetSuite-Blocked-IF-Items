@@ -10,13 +10,6 @@ This SuiteScript Client Script is designed to run on the page of a Fulfillment r
 
 ## Script Overview
 
-### Dependencies
-
-- `N/currentRecord`: Used to get the current record details.
-- `N/ui/dialog`: Provides methods to display dialog alerts.
-- `N/log`: Logs debugging information for troubleshooting.
-- `N/record`: Facilitates loading item records for checking item details.
-
 ### Functions
 
 - **pageInit(context)**: This function is triggered when the page is initialized. It logs the entry, checks if the fulfillment is from a Transfer Order, and identifies any blocked items to display in an alert.
@@ -29,15 +22,7 @@ This SuiteScript Client Script is designed to run on the page of a Fulfillment r
 2. **Configure Blocked Items**: Update the `blockedItemIds` array with the IDs of items that should not be included in the fulfillment.
 3. **Test the Functionality**: Create a Fulfillment linked to a Transfer Order with various items to test if the alerts work as expected.
 
-## Logging
-
-The script includes debug logging to track its execution and any blocked items identified. You can view logs in the NetSuite script execution logs for further analysis.
-
 ## Notes
 
 - Ensure that the item types (Inventory or Assembly) are correctly recognized in your NetSuite environment to avoid potential issues with blocked item identification.
 - Modify the blocked items list as needed to suit your business requirements.
-
-## License
-
-This script is provided as-is without any warranty. Use it at your own risk.
